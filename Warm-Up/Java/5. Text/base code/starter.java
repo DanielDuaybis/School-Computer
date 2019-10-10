@@ -22,33 +22,11 @@ public class starter implements InputControl, InputKeyControl
 				t.grow(1,1);
 				Canvas.pause(20);
 				Canvas.snapshot();
-				if(counter==0)
-				{
-					t.setColor(Color.BLUE);
-					t.setText("WOW");
-				}
-				if(counter==1)
-				{
-					t.setColor(Color.RED);
-				}
-				if(counter==2)
-				{
-					t.setColor(Color.GREEN);
-					t.setText(word);
-				}
-				if(counter==3)
-				{
-					t.setColor(Color.YELLOW);
-				}
-				if(counter==4)
-				{
-					t.setColor(Color.PINK);
-				}
-				counter = counter + 1;
-				if(counter>4)
-				{
-					counter = counter - 5;
-				}
+				int redvalue = Canvas.rand(256);
+				int greenvalue = Canvas.rand(256);
+				int bluevalue = Canvas.rand(256);
+				Color col = new Color(redvalue,greenvalue,bluevalue);
+				t.setColor(col);
 				
 			}
 		}
