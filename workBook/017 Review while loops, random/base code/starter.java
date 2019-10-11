@@ -23,7 +23,12 @@ public class starter implements InputKeyControl {
 					System.out.print("Congratulations! The number was " + num + "!");
 					break;
 				}
+				else
+				{
+					System.out.println("Sorry, try again.");
+				}
 			}
+			
 			
 		}
 		public void keyPress(String s)
