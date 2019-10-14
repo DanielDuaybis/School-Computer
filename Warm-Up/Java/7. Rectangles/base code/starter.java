@@ -20,12 +20,25 @@ public class starter implements InputControl, InputKeyControl
 	
 		}
 		
-		public void keyPress(String s)
+		public void keyPress(String r)
 		{
 			// temp holds the enter character
-			
-			char done = (char)10;
-			String temp = Character.toString(done);
+			int counter = 0;
+			while(counter<20)
+			{
+				int redvalue, greenvalue, bluevalue;
+				int val3, val4;
+				val3 = Canvas.rand(1401);
+				val4 = Canvas.rand(700);
+				redvalue = Canvas.rand(256);
+				greenvalue = Canvas.rand(256);
+				bluevalue = Canvas.rand(256);
+				Color randcol = new Color(redvalue,greenvalue,bluevalue);
+				Rectangle r1 = new Rectangle(100,50,val3,val4);
+				r1.draw();
+				r1.setColor(randcol);
+				counter = counter + 1;
+			}
 			
 		}
 }
