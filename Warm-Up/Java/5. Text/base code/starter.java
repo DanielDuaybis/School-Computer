@@ -37,12 +37,16 @@ public class starter implements InputControl, InputKeyControl
 
 		}
 		
-		public void keyPress(String s)
+		public void keyPress(String key)
 		{
 			// temp holds the enter character
-			
-			char done = (char)10;
-			String temp = Character.toString(done);
-			
+			if(key.equals(p)
+			{
+				t.grow(-1,-1);
+			}
+			if(key.equals(d)
+			{
+				t.grow(-2,-2);
+			}
 		}
 }
