@@ -1,7 +1,9 @@
 import pkg.*;
 public class starter implements InputControl, InputKeyControl 
 {
-		static Rectangle[] recs = new Recangle[Canvas.rand(100)]
+		static Rectangle[] recs = new Rectangle[Canvas.rand(20)];
+		static int redvalue, greenvalue, bluevalue;
+		static int val3, val4;
 
         public static void main(String args[])
         {
@@ -17,25 +19,19 @@ public class starter implements InputControl, InputKeyControl
 		
 		public void onMouseClick(double x, double y){
 			// and/or here
-			while(counter<recs.length)
+			Rectangle erase = new Rectangle(x,y,1,1);
+			if(recs.contains(erase))
 			{
-				if(recs[i].getX90 <= x)
-				{
-					if(x <=
-				}
+				recs.translate(10000,1000000);
 			}
 		}
-		
 		public void keyPress(String r)
 		{
 			// temp holds the enter character
 			int counter = 0;
 			
-			while(counter<Canvas.rand(25))
-			{
-				int redvalue, greenvalue, bluevalue;
-				int val3, val4;
-				
+			while(counter<5)
+			{				
 				val3 = Canvas.rand(1400);
 				val4 = Canvas.rand(700);
 				
@@ -45,9 +41,9 @@ public class starter implements InputControl, InputKeyControl
 				
 				Color randcol = new Color(redvalue,greenvalue,bluevalue);
 				
-				Rectangle r1 = new Rectangle(val3,val4,50,50);
-				r1.fill();
-				r1.setColor(randcol);
+				recs[counter] = new Rectangle(val3,val4,50,50);
+				recs[counter].fill();
+				recs[counter].setColor(randcol);
 				counter = counter + 1;
 			}
 			
