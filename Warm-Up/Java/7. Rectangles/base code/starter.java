@@ -17,13 +17,7 @@ public class starter implements InputControl, InputKeyControl
 		
 		public void onMouseClick(double x, double y){
 			// and/or here
-			while(counter<recs.length)
-			{
-				if(recs[i].getX90 <= x)
-				{
-					if(x <=
-				}
-			}
+			
 		}
 		
 		public void keyPress(String r)
