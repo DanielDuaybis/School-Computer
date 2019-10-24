@@ -30,6 +30,9 @@ public class starter implements InputControl, InputKeyControl
 			// please leave following line alone, necessary for keyboard input
 			KeyController kC = new KeyController(Canvas.getInstance(),new starter());
 			Rectangle roads = new Rectangle(0,0,1400,700);
+			Text crash = new Text(550,300,"CRASH");
+			crash.setColor(Color.RED);
+			crash.grow(500,500);
 			roads.setColor(Color.BLACK);
 			roads.fill();
 			Rectangle land1 = new Rectangle(0,0,1400,50);
@@ -91,29 +94,214 @@ public class starter implements InputControl, InputKeyControl
 			kmob17.fill();
 			kmob18 = new KrabbyMobile(Canvas.rand(10000),3700,.15);
 			kmob18.fill();
-			while(character.crash())
-			{
-				
-			}
 			
-			
-				
 			while(true)
 			{
-				if(character.getY==0)
+				kmob1.translate(5,0);
+				Canvas.pause(Canvas.rand(1));
+				kmob2.translate(5,0);
+				Canvas.pause(Canvas.rand(1));
+				kmob3.translate(5,0);
+				Canvas.pause(Canvas.rand(1));
+				kmob4.translate(5,0);
+				Canvas.pause(Canvas.rand(1));
+				kmob5.translate(5,0);
+				Canvas.pause(Canvas.rand(1));
+				kmob6.translate(5,0);
+				Canvas.pause(Canvas.rand(1));
+				kmob7.translate(5,0);
+				Canvas.pause(Canvas.rand(1));
+				kmob8.translate(5,0);
+				Canvas.pause(Canvas.rand(1));
+				kmob9.translate(5,0);
+				Canvas.pause(Canvas.rand(1));
+				kmob10.translate(5,0);
+				Canvas.pause(Canvas.rand(1));
+				kmob11.translate(5,0);
+				Canvas.pause(Canvas.rand(1));
+				kmob12.translate(5,0);
+				Canvas.pause(Canvas.rand(1));
+				kmob13.translate(5,0);
+				Canvas.pause(Canvas.rand(1));
+				kmob14.translate(5,0);
+				Canvas.pause(Canvas.rand(1));
+				kmob15.translate(5,0);
+				Canvas.pause(Canvas.rand(1));
+				kmob16.translate(5,0);
+				Canvas.pause(Canvas.rand(1));
+				kmob17.translate(5,0);
+				Canvas.pause(Canvas.rand(1));
+				kmob18.translate(5,0);
+				Canvas.pause(Canvas.rand(1));
+				if(kmob1.getX()>1400)
 				{
+					kmob1.translate(-1450,0);
+				}
+				if(kmob2.getX()>1400)
+				{
+					kmob2.translate(-1450,0);
+				}
+				if(kmob3.getX()>1400)
+				{
+					kmob3.translate(-1450,0);
+				}
+				if(kmob4.getX()>1400)
+				{
+					kmob4.translate(-1450,0);
+				}
+				if(kmob5.getX()>1400)
+				{
+					kmob5.translate(-1450,0);
+				}
+				if(kmob6.getX()>1400)
+				{
+					kmob6.translate(-1450,0);
+				}
+				if(kmob7.getX()>1400)
+				{
+					kmob7.translate(-1450,0);
+				}
+				if(kmob8.getX()>1400)
+				{
+					kmob8.translate(-1450,0);
+				}
+				if(kmob9.getX()>1400)
+				{
+					kmob9.translate(-1450,0);
+				}
+				if(kmob10.getX()>1400)
+				{
+					kmob10.translate(-1450,0);
+				}
+				if(kmob11.getX()>1400)
+				{
+					kmob11.translate(-1450,0);
+				}
+				if(kmob12.getX()>1400)
+				{
+					kmob12.translate(-1450,0);
+				}
+				if(kmob13.getX()>1400)
+				{
+					kmob13.translate(-1450,0);
+				}
+				if(kmob14.getX()>1400)
+				{
+					kmob14.translate(-1450,0);
+				}
+				if(kmob15.getX()>1400)
+				{
+					kmob15.translate(-1450,0);
+				}
+				if(kmob16.getX()>1400)
+				{
+					kmob16.translate(-1450,0);
+				}
+				if(kmob17.getX()>1400)
+				{
+					kmob17.translate(-1450,0);
+				}
+				if(kmob18.getX()>1400)
+				{
+					kmob18.translate(-1450,0);
+				}
+				if(character.getY()<=0)
+				{
+					Text cool = new Text(550,300,"YAY");
+					cool.grow(500,500);
+					cool.setColor(Color.CYAN);
+					cool.draw();
 					break;
-					while(true)
-					{
-						t.draw();
-						t.grow(1,1);
-						Canvas.pause(20);
-						int redvalue = Canvas.rand(256);
-						int greenvalue = Canvas.rand(256);
-						int bluevalue = Canvas.rand(256);
-						Color col = new Color(redvalue,greenvalue,bluevalue);
-						t.setColor(col);
-					}
+				}
+				if(character.crash(kmob1))
+				{
+					crash.draw();
+					break;
+				}
+				if(character.crash(kmob2))
+				{
+					crash.draw();
+					break;
+				}
+				if(character.crash(kmob3))
+				{
+					crash.draw();
+					break;
+				}
+				if(character.crash(kmob4))
+				{
+					crash.draw();
+					break;
+				}
+				if(character.crash(kmob5))
+				{
+					crash.draw();
+					break;
+				}
+				if(character.crash(kmob6))
+				{
+					crash.draw();
+					break;
+				}
+				if(character.crash(kmob7))
+				{
+					crash.draw();
+					break;
+				}
+				if(character.crash(kmob8))
+				{
+					crash.draw();
+					break;
+				}
+				if(character.crash(kmob9))
+				{
+					crash.draw();
+					break;
+				}
+				if(character.crash(kmob10))
+				{
+					crash.draw();
+					break;
+				}
+				if(character.crash(kmob11))
+				{
+					crash.draw();
+					break;
+				}
+				if(character.crash(kmob12))
+				{
+					crash.draw();
+					break;
+				}
+				if(character.crash(kmob13))
+				{
+					crash.draw();
+					break;
+				}
+				if(character.crash(kmob14))
+				{
+					crash.draw();
+					break;
+				}
+				if(character.crash(kmob15))
+				{
+					crash.draw();
+					break;
+				}
+				if(character.crash(kmob16))
+				{
+					crash.draw();
+					break;
+				}
+				if(character.crash(kmob17))
+				{
+					crash.draw();
+					break;
+				}
+				if(character.crash(kmob18))
+				{
+					crash.draw();
+					break;
 				}
 			}
 			
@@ -128,19 +316,19 @@ public class starter implements InputControl, InputKeyControl
 		{
 			if(key.equals("w"))
 			{
-				character.translate(0,-5);
+				character.translate(0,-7);
 			}				
 			if(key.equals("a"))
 			{
-				character.translate(-5,0);
+				character.translate(-7,0);
 			}		
 			if(key.equals("s"))
 			{
-				character.translate(0,5);
+				character.translate(0,7);
 			}		
 			if(key.equals("d"))
 			{
-				character.translate(5,0);
+				character.translate(7,0);
 			}	
 			
 			
