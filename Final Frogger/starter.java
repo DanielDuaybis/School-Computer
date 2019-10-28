@@ -21,6 +21,13 @@ public class starter implements InputControl, InputKeyControl
 		private static Car kmob16;
 		private static Car kmob17;
 		private static Car kmob18;
+		private static Car[] kmobs = new KrabbyMobile[18];
+		
+		// for (int i = 0; i < 3; i++) 
+		// {
+			// kmobs[i] = new KrabbyMobile(Canvas.rand(10000),350,.15);
+			// kmobs[i].fill();
+		// }
 	
         public static void main(String args[])
         {
@@ -97,41 +104,41 @@ public class starter implements InputControl, InputKeyControl
 			
 			while(true)
 			{
-				kmob1.translate(5,0);
+				kmob1.translate(3,0);
 				Canvas.pause(Canvas.rand(1));
-				kmob2.translate(5,0);
+				kmob2.translate(3,0);
 				Canvas.pause(Canvas.rand(1));
-				kmob3.translate(5,0);
+				kmob3.translate(3,0);
 				Canvas.pause(Canvas.rand(1));
-				kmob4.translate(5,0);
+				kmob4.translate(3,0);
 				Canvas.pause(Canvas.rand(1));
-				kmob5.translate(5,0);
+				kmob5.translate(3,0);
 				Canvas.pause(Canvas.rand(1));
-				kmob6.translate(5,0);
+				kmob6.translate(3,0);
 				Canvas.pause(Canvas.rand(1));
-				kmob7.translate(5,0);
+				kmob7.translate(3,0);
 				Canvas.pause(Canvas.rand(1));
-				kmob8.translate(5,0);
+				kmob8.translate(3,0);
 				Canvas.pause(Canvas.rand(1));
-				kmob9.translate(5,0);
+				kmob9.translate(3,0);
 				Canvas.pause(Canvas.rand(1));
-				kmob10.translate(5,0);
+				kmob10.translate(3,0);
 				Canvas.pause(Canvas.rand(1));
-				kmob11.translate(5,0);
+				kmob11.translate(3,0);
 				Canvas.pause(Canvas.rand(1));
-				kmob12.translate(5,0);
+				kmob12.translate(3,0);
 				Canvas.pause(Canvas.rand(1));
-				kmob13.translate(5,0);
+				kmob13.translate(3,0);
 				Canvas.pause(Canvas.rand(1));
-				kmob14.translate(5,0);
+				kmob14.translate(3,0);
 				Canvas.pause(Canvas.rand(1));
-				kmob15.translate(5,0);
+				kmob15.translate(3,0);
 				Canvas.pause(Canvas.rand(1));
-				kmob16.translate(5,0);
+				kmob16.translate(3,0);
 				Canvas.pause(Canvas.rand(1));
-				kmob17.translate(5,0);
+				kmob17.translate(3,0);
 				Canvas.pause(Canvas.rand(1));
-				kmob18.translate(5,0);
+				kmob18.translate(3,0);
 				Canvas.pause(Canvas.rand(1));
 				if(kmob1.getX()>1400)
 				{
@@ -316,19 +323,19 @@ public class starter implements InputControl, InputKeyControl
 		{
 			if(key.equals("w"))
 			{
-				character.translate(0,-7);
+				character.translate(0,-10);
 			}				
 			if(key.equals("a"))
 			{
-				character.translate(-7,0);
+				character.translate(-10,0);
 			}		
 			if(key.equals("s"))
 			{
-				character.translate(0,7);
+				character.translate(0,10);
 			}		
 			if(key.equals("d"))
 			{
-				character.translate(7,0);
+				character.translate(10,0);
 			}	
 			
 			
