@@ -22,8 +22,32 @@ main()
 {
       srand(time(NULL)); 
   // write code here
-cout<<"yeah we are starting c++";  // leave the following line in all programs
-  
+	// leave the following line in all programs
+  	char input;
+  	char direc;
+  	int length;
+  	int counter;
+  	cout<<"Please enter the symbol:   ";
+  	cin>>input;
+  	cout<<"Please enter the length:   ";
+  	cin>>length;
+  	cout<<"Please enter the direction (h or v):   ";
+  	cin>>direc;
+  	if(direc = 'h')
+  	{
+  		for(counter = 0; counter < length; counter++)
+  		{
+  			cout<<input;
+		  }
+	  }
+	if(direc = 'v')
+	{
+		for(counter = 0; counter < length; counter++)
+		{
+			cout<<endl<<input;
+			}
+		}
+	
       getch();
 }
 
