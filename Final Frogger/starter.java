@@ -4,12 +4,6 @@ public class starter implements InputControl, InputKeyControl
 		static Emoji character;
 		static Text t = new Text(600,300,"CONGRATULATIONS");
 		private static Car[] kmobs = new KrabbyMobile[18];
-		static int i;
-		static int i1;
-		static int i2;
-		static int i3;
-		static int i4;
-		static int i5;
 	
         public static void main(String args[])
         {
@@ -47,32 +41,32 @@ public class starter implements InputControl, InputKeyControl
 			Rectangle land7 = new Rectangle(0,600,1400,100);
 			land7.setColor(Color.GREEN);
 			land7.fill();
-			for(i = 0; i < 3; i++) 
+			for(int i = 0; i < 3; i++) 
 			{
-				kmobs[i] = new KrabbyMobile(Canvas.rand(10000),350,.15);
+				kmobs[i] = new KrabbyMobile(Canvas.rand(10000),350,.150);
 				kmobs[i].fill();
 			}
-			for(i1 = 0; i1 < 3; i1++)
+			for(int i1 = 3; i1 < 6; i1++)
 			{
 				kmobs[i1] = new KrabbyMobile(Canvas.rand(10000),1000,.150);
 				kmobs[i1].fill();
 			}
-			for(i2 = 0; i2 < 3; i2++)
+			for(int i2 = 6; i2 < 9; i2++)
 			{
 				kmobs[i2] = new KrabbyMobile(Canvas.rand(10000),1700,.150);
 				kmobs[i2].fill();
 			}
-			for(i3 = 0; i3 < 3; i3++)
+			for(int i3 = 9; i3 < 12; i3++)
 			{
 				kmobs[i3] = new KrabbyMobile(Canvas.rand(10000),2350,.150);
 				kmobs[i3].fill();
 			}
-			for(i4 = 0; i4 < 3; i4++)
+			for(int i4 = 12; i4 < 15; i4++)
 			{
 				kmobs[i4] = new KrabbyMobile(Canvas.rand(10000),3000,.150);
 				kmobs[i4].fill();
 			}
-			for(i5 = 0; i5 < 3; i5++)
+			for(int i5 = 15; i5 < 18; i5++)
 			{
 				kmobs[i5] = new KrabbyMobile(Canvas.rand(10000),3700,.150);
 				kmobs[i5].fill();
@@ -81,18 +75,18 @@ public class starter implements InputControl, InputKeyControl
 			character.fill();
 			while(true)
 			{
-				kmobs[i].translate(3,0);
-				Canvas.pause(1);
-				kmobs[i1].translate(3,0);
-				Canvas.pause(3);
-				kmobs[i2].translate(3,0);
-				Canvas.pause(5);
-				kmobs[i3].translate(3,0);
-				Canvas.pause(7);
-				kmobs[i4].translate(3,0);
-				Canvas.pause(9);
-				kmobs[i5].translate(3,0);
-				Canvas.pause(11);
+				int counter1 = -1;
+				for (int i = 0; i < kmobs.length; i++)
+				{
+					kmobs[i].translate(3,0);
+					
+					if(i % 3 == 0)
+					{
+						counter1 = counter1 + 2;
+					}
+					
+					Canvas.pause(counter1);
+				}	 
 			}
 		}
 		

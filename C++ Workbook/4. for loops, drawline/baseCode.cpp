@@ -44,7 +44,7 @@ main()
 	{
 		for(counter = 0; counter < length; counter++)
 		{
-			cout<<endl<<input;
+			cout<<input<<endl;
 			}
 		}
 	
