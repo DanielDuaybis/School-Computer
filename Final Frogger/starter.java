@@ -73,21 +73,25 @@ public class starter implements InputControl, InputKeyControl
 			}
 			character = new Emoji(675,650,50,50);
 			character.fill();
-			while(true)
+			for(int i = 0; i < 18; i++)
 			{
-				int counter1 = -1;
-				for (int i = 0; i < kmobs.length; i++)
-				{
-					kmobs[i].translate(3,0);
-					
-					if(i % 3 == 0)
-					{
-						counter1 = counter1 + 2;
-					}
-					
-					Canvas.pause(counter1);
-				}	 
+				kmobs[i].translate(3,0);
 			}
+			// while(true)
+			// {
+				// int counter1 = -1;
+				// for (int i = 0; i < kmobs.length; i++)
+				// {
+					
+					
+					// if(i % 3 == 0)
+					// {
+						// counter1 = counter1 + 2;
+					// }
+					
+					// Canvas.pause(counter1);
+				// }	 
+			// }
 		}
 		
 		public void onMouseClick(double x, double y)
