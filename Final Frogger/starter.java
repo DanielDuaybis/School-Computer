@@ -4,6 +4,7 @@ public class starter implements InputControl, InputKeyControl
 		static Emoji character;
 		static Text t = new Text(600,300,"CONGRATULATIONS");
 		private static Car[] kmobs = new KrabbyMobile[18];
+		static int i = 3;
 	
         public static void main(String args[])
         {
@@ -73,25 +74,19 @@ public class starter implements InputControl, InputKeyControl
 			}
 			character = new Emoji(675,650,50,50);
 			character.fill();
-			for(int i = 0; i < 18; i++)
+			while(true)
 			{
 				kmobs[i].translate(3,0);
+				if(kmobs[i].getX()<=1400)
+				{
+					kmobs[i].translate(-1470,0);
+				}
+				if(character.crash(kmobs[i]))
+				{
+					break;
+				}
 			}
-			// while(true)
-			// {
-				// int counter1 = -1;
-				// for (int i = 0; i < kmobs.length; i++)
-				// {
-					
-					
-					// if(i % 3 == 0)
-					// {
-						// counter1 = counter1 + 2;
-					// }
-					
-					// Canvas.pause(counter1);
-				// }	 
-			// }
+			
 		}
 		
 		public void onMouseClick(double x, double y)

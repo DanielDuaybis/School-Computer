@@ -23,22 +23,17 @@ main()
       srand(time(NULL)); 
   // write code here
   // leave the following line in all programs
-  	char input;
+  	char in;
   	cout<<"Please enter a character:   ";
-  	cin>>input;
-  	for(int i; i < 9; i++)
-  	{
-  		cout<<input;
-  		}
-  	cout<<endl;
-  	for(int i; i < 18; i++)
- 	{
- 		cout<<input + "       " + input<<endl;
-	  }
-	for(int i; i < 9; i++)
-	{
-		cout<<input;	
-		}
+  	cin>>in;
+  	cout<<" "<<in<<in<<in<<in<<in<<in<<in<<in<<" "<<endl;
+  	cout<<in<<"  "<<in<<" "<<in<<"  "<<in<<endl;
+  	cout<<in<<"        "<<in<<endl;
+  	cout<<in<<"        "<<in<<endl;
+  	cout<<in<<"        "<<in<<endl;
+  	cout<<in<<"        "<<in<<endl;
+  	cout<<in<<"        "<<in<<endl;
+  	
 	
   
       getch();
