@@ -21,8 +21,8 @@ int random(int r)
 main()
 {
       srand(time(NULL)); 
-  // write code here
-cout<<"yeah we are starting c++";  // leave the following line in all programs
+  	// write code here
+	// leave the following line in all programs
   
       getch();
 }

@@ -21,33 +21,18 @@ int random(int r)
 main()
 {
       srand(time(NULL)); 
-  // write code here
+  	// write code here
 	// leave the following line in all programs
   	char input;
-  	char direc;
-  	int length;
-  	int counter;
-  	cout<<"Please enter the symbol:   ";
+  	int width;
+  	int height;
+  	cout<<"Please enter a character:  ";
   	cin>>input;
-  	cout<<"Please enter the length:   ";
-  	cin>>length;
-  	cout<<"Please enter the direction (h or v):   ";
-  	cin>>direc;
-  	if(direc == 'h')
-  	{
-  		for(counter = 0; counter < length; counter++)
-  		{
-  			cout<<input<<"  ";
-		  }
-	  }
-	if(direc == 'v')
-	{
-		for(counter = 0; counter < length; counter++)
-		{
-			cout<<input<<endl;
-			}
-		}
-	
+  	cout<<"Please enter the width:  ";
+  	cin>>width;
+  	cout<<"Please enter the height:  ";
+  	cin>>height;
+  	for(int i = 0)
       getch();
 }
 

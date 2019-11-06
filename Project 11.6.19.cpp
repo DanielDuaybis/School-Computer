@@ -23,43 +23,15 @@ main()
       srand(time(NULL)); 
   // write code here
 	// leave the following line in all programs
-  	char input;
-  	char direc;
-  	int length;
   	int counter;
-  	int xx = 0;
-  	int yy = 3;
-  	cout<<"Please enter the symbol:   ";
-  	cin>>input;
-  	cout<<"Please enter the length:   ";
-  	cin>>length;
-  	cout<<"Please enter the direction (h, v, or d):   ";
-  	cin>>direc;
-  	if(direc == 'h')
+  	int var = 0;
+  	cout<<"Please enter a number:   ";
+  	cin>>counter;
+  	for(int in = 0; in <= counter; in++)
   	{
-  		for(counter = 0; counter < length; counter++)
-  		{
-  			cout<<input<<"  ";
-		  }
+  		cout<<var<<endl;
+  		var++;
 	  }
-	if(direc == 'v')
-	{
-		for(counter = 0; counter < length; counter++)
-		{
-			cout<<input<<endl;
-			}
-		}
-	if(direc == 'd')
-	{
-		for(counter = 0; counter <= length - 1; counter++)
-		{
-			gotoxy(xx,yy),
-			cout<<input;
-			xx++;
-			yy++;
-			}
-		}
-	
       getch();
 }
 
