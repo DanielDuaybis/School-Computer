@@ -27,29 +27,16 @@ main()
 	int width;
   	int height;
   	int counter = 0;
+  	int counter2 = 4;
   	cout<<"Please input the frame character:  ";
   	cin>>input;
   	cout<<"Please input the width:  ";
   	cin>>width;
   	cout<<"Please input the height:  ";
   	cin>>height;
-  	for(int i = 0; i < 2; i++)
+  	for(int i; i < 2; i++)
   	{
-		for(int i = 0; i < width; i++)
-  		{
-  			cout<<input;
-		}
-		gotoxy(0,height + 4);
-	}
-	for(int i = 0; i < 2; i++)
-	{
-		for(int i = 0; i < height; i++)
-		{
-			cout<<input;
-			gotoxy(0,4 + counter);
-			counter++;
-		}
-		gotoxy(width,4)
+  		for(int )
 	}
       getch();
 }
