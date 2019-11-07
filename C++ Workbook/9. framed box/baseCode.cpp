@@ -24,31 +24,33 @@ main()
   	// write code here
 	// leave the following line in all programs
   	char input;
-  	int width;
+	int width;
   	int height;
-  	int xx;
-  	int yy;
-  	int counter = 1;
-  	cout<<"Please enter a character:  ";
+  	int counter = 0;
+  	cout<<"Please input the frame character:  ";
   	cin>>input;
-  	cout<<"Please enter the width:  ";
+  	cout<<"Please input the width:  ";
   	cin>>width;
-  	cout<<"Please enter the height:  ";
+  	cout<<"Please input the height:  ";
   	cin>>height;
-  	cout<<"Please enter the x coordinate:  ";
-  	cin>>xx;
-  	cout<<"Please enter y coordinate:  ";
-  	cin>>yy;
-  	gotoxy(xx,yy);
-  	for(int i = 0; i < height; i++)
+  	for(int i = 0; i < 2; i++)
   	{
-  		for(int i = 0; i < width; i++)
+		for(int i = 0; i < width; i++)
   		{
   			cout<<input;
-		  }
-		gotoxy(xx,yy + counter);
-		counter++;
-	  	}
+		}
+		gotoxy(0,height + 4);
+	}
+	for(int i = 0; i < 2; i++)
+	{
+		for(int i = 0; i < height; i++)
+		{
+			cout<<input;
+			gotoxy(0,4 + counter);
+			counter++;
+		}
+		gotoxy(width,4)
+	}
       getch();
 }
 
