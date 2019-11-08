@@ -26,35 +26,42 @@ main()
   	char input;
 	int width;
   	int height;
-  	int counter = 4;
-  	int counter2 = 4;
+  	int xx;
+  	int yy;
+  	int counter = 0;
   	cout<<"Please input the frame character:  ";
   	cin>>input;
   	cout<<"Please input the width:  ";
   	cin>>width;
   	cout<<"Please input the height:  ";
   	cin>>height;
+  	cout<<"Please enter the x coordinate:  ";
+  	cin>>xx;
+  	cout<<"Please enter the y coordinate:  ";
+  	cin>>yy;
+  	gotoxy(xx,yy);
   	for(int i = 0; i < width; i++)
   	{
   		cout<<input;
 	}
-	gotoxy(0, height + 2);
+	gotoxy(xx,yy + height - 1);
 	for(int i = 0; i < width; i++)
 	{
 		cout<<input;
 	}
-	gotoxy(0, 4);
-	for(int i = 0; i < height; i++)
+	gotoxy(xx,yy);
+	for(int i = 0; i < height; i ++)
 	{
 		cout<<input;
-		gotoxy(0, counter2);
-		counter2++;
+		gotoxy(xx,yy + counter);
+		counter++;
 	}
-	gotoxy(width - 1, 4);
+	gotoxy(xx + width - 1,yy);
+	counter = 0;
 	for(int i = 0; i < height; i++)
 	{
 		cout<<input;
-		gotoxy(width - 1, counter);
+		gotoxy(xx + width - 1,yy + counter);
 		counter++;
 	}
       getch();
