@@ -47,7 +47,7 @@ main()
   	{
   		for(int i = 0; i < 4; i++)
   		{
-  			cout<<' ';
+  			cout<<'?';
 		}
 		gotoxy(6, 6 + counter);
   		counter++;

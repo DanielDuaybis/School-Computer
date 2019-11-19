@@ -21,14 +21,48 @@ main()
   	framedbox(4,8,5,7,'#');
   	framedbox(19,8,5,7,'#');
   	framedbox(34,8,5,7,'#');
-	while(kbhit() == 0)
+  	gotoxy(2,2);
+  	cout<<"Credits:  $";
+  	cout<<bet;
+	while(getch() != 'q')
 	{
-		gotoxy(6,10);
-		cout<<random(99);
-		gotoxy(21,10);
-		cout<<random(99);
-		gotoxy(36,10);
-		cout<<random(99);
+		while(kbhit() == 0)
+		{
+			gotoxy(6,10);
+			num1 = random(99);
+			cout<<num1;
+			gotoxy(21,10);
+			num2 = random(99);
+			cout<<num2;
+			gotoxy(36,10);
+			num3 = random(99);
+			cout<<num3;
+		}
+		getch();
+		if(num1 == num2 && num2 == num3 && num1 == num3)
+		{
+			gotoxy(4,16);
+			cout<<"JACKPOT! YOU WON $20.00!";
+		}
+		else if(num1 == num2)
+		{
+			gotoxy(4,16);
+			cout<<"You won 50 cents!";
+			bet = bet + .50;
+		}
+		else if(num2 == num3)
+		{
+			gotoxy(4,16);
+			cout<<"You won 50 cents!";
+			bet = bet + .50;
+		}
+		else if(num1 == num3)
+		{
+			gotoxy(4,16);
+			cout<<"You won 50 cents!";
+			bet = bet + .50;
+		}
 	}
+	
 }
       
