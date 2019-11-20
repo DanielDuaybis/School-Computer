@@ -37,30 +37,47 @@ main()
 			gotoxy(36,10);
 			num3 = random(99);
 			cout<<num3;
+			gotoxy(4,16);
+			cout<<"                               ";
 		}
 		getch();
 		if(num1 == num2 && num2 == num3 && num1 == num3)
 		{
 			gotoxy(4,16);
 			cout<<"JACKPOT! YOU WON $20.00!";
+			bet = bet + 20;
+			gotoxy(13,2);
+			cout<<bet;
 		}
 		else if(num1 == num2)
 		{
 			gotoxy(4,16);
 			cout<<"You won 50 cents!";
 			bet = bet + .50;
+			gotoxy(13,2);
+			cout<<bet;
 		}
 		else if(num2 == num3)
 		{
 			gotoxy(4,16);
 			cout<<"You won 50 cents!";
 			bet = bet + .50;
+			gotoxy(13,2);
+			cout<<bet;
 		}
 		else if(num1 == num3)
 		{
 			gotoxy(4,16);
 			cout<<"You won 50 cents!";
 			bet = bet + .50;
+			gotoxy(13,2);
+			cout<<bet;
+		}
+		else
+		{
+			bet = bet - .05;
+			gotoxy(13,2);
+			cout<<bet;
 		}
 	}
 	

@@ -18,19 +18,26 @@ int random(int r)
     return rand()% r + 1;
 }  
 ///////////////////////////////////////////////////////////////////////
-void drawWrd();
+void drawBox();
 main()
 {
       srand(time(NULL)); 
   	// write code here
-  	drawWrd();
 	// leave the following line in all programs
-  	
+  	drawBox();
       getch();
 }
-void drawWrd()
+void drawBox()
 {
-	cout<<"I'M A WORD, I'M ALIVE. WOOHOO!!";
+	cout<<endl;
+	for(int i = 0; i < 4; i++ )
+	{
+		for(int i = 0; i < 10; i++)
+		{
+			cout<<'&';
+		}
+		cout<<endl;
+	}
 }
 
 
