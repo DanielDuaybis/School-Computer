@@ -30,24 +30,40 @@ main()
 		{
 			gotoxy(6,10);
 			num1 = random(99);
-			cout<<num1;
+			cout<<num1<<' ';
 			gotoxy(21,10);
 			num2 = random(99);
-			cout<<num2;
+			cout<<num2<<' ';
 			gotoxy(36,10);
 			num3 = random(99);
-			cout<<num3;
+			cout<<num3<<' ';
 			gotoxy(4,16);
 			cout<<"                               ";
+			Sleep(75);
+			
 		}
+		gotoxy(13,2);
+		if(bet < 10)
+		{
+			gotoxy(16,2);
+			cout<<'0';
+		}
+		else
+		{
+			gotoxy(17,2);
+			cout<<'0';
+		}
+		gotoxy(13,2);
+		bet = bet - .05;
+		cout<<bet;
 		getch();
 		if(num1 == num2 && num2 == num3 && num1 == num3)
 		{
-			gotoxy(4,16);
+			gotoxy(4,17);
 			cout<<"JACKPOT! YOU WON $20.00!";
 			bet = bet + 20;
 			gotoxy(13,2);
-			cout<<bet;
+			cout<<bet<<' ';
 		}
 		else if(num1 == num2)
 		{
@@ -55,7 +71,7 @@ main()
 			cout<<"You won 50 cents!";
 			bet = bet + .50;
 			gotoxy(13,2);
-			cout<<bet;
+			cout<<bet<<' ';
 		}
 		else if(num2 == num3)
 		{
@@ -63,7 +79,7 @@ main()
 			cout<<"You won 50 cents!";
 			bet = bet + .50;
 			gotoxy(13,2);
-			cout<<bet;
+			cout<<bet<<' ';
 		}
 		else if(num1 == num3)
 		{
@@ -71,13 +87,7 @@ main()
 			cout<<"You won 50 cents!";
 			bet = bet + .50;
 			gotoxy(13,2);
-			cout<<bet;
-		}
-		else
-		{
-			bet = bet - .05;
-			gotoxy(13,2);
-			cout<<bet;
+			cout<<bet<<' ';
 		}
 	}
 	
