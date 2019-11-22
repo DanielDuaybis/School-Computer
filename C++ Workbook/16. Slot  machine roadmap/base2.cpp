@@ -89,7 +89,13 @@ main()
 			gotoxy(13,2);
 			cout<<bet<<' ';
 		}
+		if(bet == 0)
+		{
+			gotoxy(4,17);
+			cout<<"YOU LOSE, FAREWELL SWINE!";
+			gotoxy(0,23);
+			break;
+		}
 	}
-	
 }
       
