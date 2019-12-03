@@ -20,13 +20,13 @@ int random(int r)
 ///////////////////////////////////////////////////////////////////////
 main()
 {
-	ifstream greg;
-	char neat;
-	greg.open("text.txt", ios::in);
+	ifstream kevin;
+	char tenors;
+	kevin.open("text.txt", ios::in);
 
-	while(greg >> neat)
+	while(kevin >> tenors)
 	{
-		cout << neat;
+		cout << tenors;
 	}
 
 }

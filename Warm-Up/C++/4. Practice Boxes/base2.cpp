@@ -1,5 +1,5 @@
 // base code file
-#include"Gaby.h"
+#include"Daniel.h"
 // generates a random number between 0 and r inclusive
 int random(int r)
 {
