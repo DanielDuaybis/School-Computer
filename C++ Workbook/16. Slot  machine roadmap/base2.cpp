@@ -17,7 +17,7 @@ main()
   	cout<<"How much money will you bet(Limit of 99!):  $";
   	cin>>bet;
   	gotoxy(0,0);
-  	cout<<"                                                   ";
+  	cout<<"                                                                       ";
   	while(bet > 99)
   	{
   		gotoxy(0,0);
@@ -66,10 +66,9 @@ main()
 			num3 = random(100);
 			cout<<num3<<' ';
 			gotoxy(4,16);
-			cout<<"                               ";
 			Sleep(75);
-			
 		}
+		cout<<"                               ";
 		gotoxy(13,2);
 		if(bet < 10)
 		{
