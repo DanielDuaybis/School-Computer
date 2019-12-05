@@ -20,13 +20,35 @@ int random(int r)
 ///////////////////////////////////////////////////////////////////////
 main()
 {
+	string name;
 	ifstream kevin;
-	char tenors;
-	kevin.open("text.txt", ios::in);
+	ifstream josiah;
+	string tenors;
+	string quads;
+	kevin.open("welcome.txt", ios::in);
 
 	while(kevin >> tenors)
 	{
 		cout << tenors;
+		Sleep(50);
 	}
+	Sleep(200);
+	gotoxy(0,0);
+	cout<<"                                                                                                  ";
+	gotoxy(0,0);
+	cout<<"Please input the name of the person you would like to look up: ";
+	cin>>name;
 
+	if(name == "kevin")
+	{
+		ifstream josiah;
+		char quads;
+		josiah.open("kevin.txt", ios::in);
+	
+		while(josiah >> quads)
+		{
+			cout << quads;
+			Sleep(50);
+		}
+	}	
 }
