@@ -20,11 +20,11 @@ int random(int r)
 ///////////////////////////////////////////////////////////////////////
 main()
 {
-	string name;
+	string term;
 	ifstream kevin;
-	ifstream josiah;
-	string tenors;
-	string quads;
+//	ifstream josiah;
+	char tenors;
+//	string quads;
 	kevin.open("welcome.txt", ios::in);
 
 	while(kevin >> tenors)
@@ -34,21 +34,38 @@ main()
 	}
 	Sleep(200);
 	gotoxy(0,0);
-	cout<<"                                                                                                  ";
+	cout<<"                                                                                                                                                                  ";
 	gotoxy(0,0);
-	cout<<"Please input the name of the person you would like to look up: ";
-	cin>>name;
-
-	if(name == "kevin")
-	{
+	cout<<"Please input the name of the person you would like to look up or type (in) to submit a description";
+	Sleep(2000);
+	gotoxy(0,0);
+	cout<<"                                                                                                                ";
+	gotoxy(0,0);
+	cout<<"Or you can type input to submit a description (Not functional yet): ";
+	cin>>term;
+	cout<<endl<<endl<<endl;
+	
+	
+//	if(term == "kevin")
+//	{
 		ifstream josiah;
-		char quads;
+		string quads;
 		josiah.open("kevin.txt", ios::in);
 	
 		while(josiah >> quads)
 		{
 			cout << quads;
-			Sleep(50);
+		}
+//	}
+	if(term == "daniel")
+	{
+		ifstream josiah;
+		string quads;
+		josiah.open("daniel.txt", ios::in);
+	
+		while(josiah >> quads)
+		{
+			cout << quads;
 		}
 	}	
 }
