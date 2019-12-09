@@ -22,9 +22,7 @@ main()
 {
 	string term;
 	ifstream kevin;
-//	ifstream josiah;
 	char tenors;
-//	string quads;
 	kevin.open("welcome.txt", ios::in);
 
 	while(kevin >> tenors)
