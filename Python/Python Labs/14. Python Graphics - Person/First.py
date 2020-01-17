@@ -35,7 +35,7 @@ righthand1.setOutline('tan')
 righthand1.draw(window)
 
 #Right arm other position
-rightarm2 = Polygon(Point(600,200),Point(700,200),Point(775,100),Point(825,100),Point(775,250),Point(600,250))
+rightarm2 = Polygon(Point(600,200),Point(725,200),Point(775,100),Point(825,100),Point(775,250),Point(600,250))
 rightarm2.setFill('cyan')
 
 #Right hand other position
@@ -46,17 +46,17 @@ righthand2.setOutline('tan')
 #Waving animation
 time.sleep(.5)
 for x in range(0,99999999999):
-    if(x % 2 == 1):
-        undraw(rightarm1)
-        undraw(righthand1)
+    if(x % 2 == 0):
+        rightarm1.undraw()
+        righthand1.undraw()
 
-        rightarm2.draw(window)
-        rightarm2.draw(window)
+        #rightarm2.draw(window)
+        #rightarm2.draw(window)
 
         time.sleep(.5)
-    if(x % 2 == 0):
-        undraw(rightarm2)
-        undraw(righthand2)
+    if(x % 2 == 1):
+        #rightarm2.undraw()
+        #righthand2.undraw()
 
         rightarm1.draw(window)
         rightarm1.draw(window)
