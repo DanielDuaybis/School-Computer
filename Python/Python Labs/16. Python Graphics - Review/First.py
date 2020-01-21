@@ -4,7 +4,6 @@ window = GraphWin('window',1000,1000)
 
 #Message
 tex = input("What message would you like to send? ")
-window = GraphWin('window',1000,1000)
 message = Text(Point(500,475),tex)
 message.setSize(36)
 message.setStyle("bold italic")
@@ -36,15 +35,9 @@ test.draw(window)
 
 #Flag
 
+blue = Rectangle(Point(20,200),Point(40,220))
+blue.setFill('blue')
+blue.draw(window)
 
 #Person
 
-
-#Message
-tex = input("What message would you like to send? ")
-window = GraphWin('window',1000,1000)
-message = Text(Point(500,475),tex)
-message.setSize(36)
-message.setStyle("bold italic")
-message.setTextColor('cyan')
-message.draw(window)
