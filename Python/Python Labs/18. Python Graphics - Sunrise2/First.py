@@ -1,4 +1,4 @@
-#Lab 16
+#Lab 18
 from graphics import *
 
 #Message
@@ -29,9 +29,11 @@ for x in range(0,9):
     p3x = int(p3x) + 100
     p4x = int(p4x) + 100
     p5x = int(p5x) + 100
-test = Circle(Point(50,50),50)
-test.setFill('yellow')
-test.draw(window)
+
+sun = Circle(Point(500,400),50)
+sun.setFill('yellow')
+sun.setOutline('yellow')
+sun.draw(window)
 
 #Flag
 
@@ -123,7 +125,7 @@ mouthcover.setFill('tan')
 mouthcover.setOutline('tan')
 mouthcover.draw(window)
 
-righteye = Circle(Point(48,475),5)
+righteye = Circle(Point(48,4755),5)
 righteye.setFill('white')
 righteye.draw(window)
 
@@ -141,7 +143,17 @@ leftpupil.setFill('blue')
 leftpupil.setOutline('blue')
 leftpupil.draw(window)
 
-window.getMouse()
+#Sun movement
+x = 5
+while(x > 4):
+    window.getMouse()
+    sun.move(0,-5)
+    message.setText(sun.getP1().getY())
+    if(sun.getP1().getY() == -50):
+        x = x - 2
+
+#Close the program
+GraphWin.getMouse()
 window.close()
 
 

@@ -1,10 +1,10 @@
-#Lab 16
+#Lab 19
 from graphics import *
 
 #Message
 tex = input("What message would you like to send? ")
 window = GraphWin('window',1000,1000)
-message = Text(Point(500,475),tex)
+message = Text(Point(600,475),tex)
 message.setSize(36)
 message.setStyle("bold italic")
 message.setTextColor('black')
@@ -29,9 +29,11 @@ for x in range(0,9):
     p3x = int(p3x) + 100
     p4x = int(p4x) + 100
     p5x = int(p5x) + 100
-test = Circle(Point(50,50),50)
-test.setFill('yellow')
-test.draw(window)
+
+sun = Circle(Point(450,300),50)
+sun.setFill('yellow')
+sun.setOutline('yellow')
+sun.draw(window)
 
 #Flag
 
@@ -141,7 +143,15 @@ leftpupil.setFill('blue')
 leftpupil.setOutline('blue')
 leftpupil.draw(window)
 
-window.getMouse()
-window.close()
-
-
+#Sun movement
+x = 0
+col = 0
+while(x < 4):
+    window.getMouse()
+    sun.move(0,-100)
+    message.setText(sun.getP1().getY())
+    if(col > 0):
+        col2 = 'cyan' + str(col)
+        window.setBackground(col2)
+    col = col + 1
+    x = x + 1
