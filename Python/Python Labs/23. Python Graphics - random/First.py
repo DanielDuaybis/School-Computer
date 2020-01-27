@@ -166,3 +166,6 @@ while(x < 4):
     col = col + 1
     x = x + 1
 """
+
+window.getMouse()
+window.close()
