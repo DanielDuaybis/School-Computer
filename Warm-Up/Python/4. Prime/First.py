@@ -1,9 +1,8 @@
 #Warm-Up 1/27/20
 
-num = int(input("How high do you want your prime numbers to go to? "))
-
-i = 2
-while i > 1:
-    for x in range(2,num):
-        if(num % x != 0):
-            print(x)
+for x in range(1,1000000000000000000000000000000000000 + 1):
+       for i in range(2,x):
+              if(x % i) == 0:
+                     break
+              else:
+                     print(x)
