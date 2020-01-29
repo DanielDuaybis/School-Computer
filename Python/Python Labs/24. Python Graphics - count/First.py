@@ -10,17 +10,7 @@ message.setStyle("bold italic")
 message.setTextColor('black')
 message.draw(window)
 """
-window = GraphWin('window',1000,1000)
-
-#Waldo
-waldo = Image(Point(600,550),"Waldo.gif")
-waldo.draw(window)
-x = 1
-while(x > 0):
-    window.getMouse()
-    xx = randint(0, window.getWidth())
-    yy = randint(0, window.getHeight())
-    waldo.move(xx,yy)
+window = GraphWin('window',1000,700)
 
 #Landscape
 window.setBackground('cyan')
@@ -104,6 +94,22 @@ white1.draw(window)
 red7 = Rectangle(Point(20,235),Point(70,238))
 red7.setFill('red')
 red7.draw(window)
+
+#Waldo
+waldo = Image(Point(600,550),"Waldo.gif")
+waldo.draw(window)
+for i in range(0,10):
+    window.getMouse()
+    xx = randint(0, window.getWidth())
+    yy = randint(0, window.getHeight())
+    waldo.move(xx,yy)
+var = 2
+while(var > 1):
+    newpoint = waldo.getAnchor()
+    waldo.undraw()
+    waldo2 = Image(newpoint,"Waldo2.gif")
+    waldo2.draw(window)
+
 
 #Person
 """
