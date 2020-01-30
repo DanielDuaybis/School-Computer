@@ -25,9 +25,24 @@ counter = Text(Point(900,200),'Times Clicked: ')
 counter.setSize(30)
 counter.draw(w)
 
-clicked = Text(Point(950,200),'0')
+clicked = Text(Point(1100,200),'0')
 clicked.setSize(30)
 clicked.draw(w)
+
+#Finding Waldo
+for i in range(0,9876543210):
+    clicked.setText(i)
+    if(waldo.contains(w.getMouse())):
+        break
+
+#Winning Sequence
+win = Text(Point(700,250),'CONGRATS!')
+win.setSize(36)
+win.draw(w)
+
+win2 = Text(Point(700,300),'YOU CAUGHT WALDO IN ' + str(clicked.getText()) + ' CLICKS')
+win2.setSize(36)
+win2.draw(w)
 
 w.getMouse()
 w.close()
