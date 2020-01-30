@@ -98,17 +98,27 @@ red7.draw(window)
 #Waldo
 waldo = Image(Point(600,550),"Waldo.gif")
 waldo.draw(window)
+counter = Text(Point(700,200),"Times Clicked:")
+counter.draw(window)
+numbers = Text(Point(800,200),"0")
+numbers.draw(window)
 for i in range(0,10):
     window.getMouse()
     xx = randint(0, window.getWidth())
     yy = randint(0, window.getHeight())
     waldo.move(xx,yy)
+    numbers.setText(str(i))
 var = 2
-while(var > 1):
+waldo.undraw()
+waldo2 = Image(Point(500,400),"Waldo2.gif")
+waldo2.draw(window)
+for x in range(0,10000000):
     #newpoint = waldo.getAnchor()
-    waldo.undraw()
-    waldo2 = Image(Point(),"Waldo2.gif")
-    waldo2.draw(window)
+    window.getMouse()
+    xx = randint(0, window.getWidth())
+    yy = randint(0, window.getHeight())
+    waldo2.move(xx,yy)
+    numbers.setText(int(x + 10))
 
 
 #Person
