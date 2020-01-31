@@ -30,19 +30,31 @@ clicked.setSize(30)
 clicked.draw(w)
 
 #Finding Waldo
-for i in range(0,9876543210):
+close = Text(Point(500,200),' ')
+close.setSize(36)
+close.draw(w)
+for i in range(0,20):
     clicked.setText(i)
-    if(waldo.contains(w.getMouse())):
+    
+    if(waldo.contains(Point(location))):
+        #Winning Sequence
+        win = Text(Point(700,250),'CONGRATS!')
+        win.setSize(36)
+        win.draw(w)
+        win2 = Text(Point(700,300),'YOU CAUGHT WALDO IN ' + str(clicked.getText()) + ' CLICKS')
+        win2.setSize(36)
+        win2.draw(w)
         break
+    
+    elif():
+        
+    else:
+        
+    
+    location = w.getMouse()
 
-#Winning Sequence
-win = Text(Point(700,250),'CONGRATS!')
-win.setSize(36)
-win.draw(w)
-
-win2 = Text(Point(700,300),'YOU CAUGHT WALDO IN ' + str(clicked.getText()) + ' CLICKS')
-win2.setSize(36)
-win2.draw(w)
+if(i == 20):
+    lose = Text(Point(700,250),'YOU LOSE')
 
 w.getMouse()
 w.close()
