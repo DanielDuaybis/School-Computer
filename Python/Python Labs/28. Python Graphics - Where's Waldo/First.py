@@ -4,7 +4,7 @@ from Waldo import Waldo
 from random import *
 import time
 
-w = GraphWin('w',1400,700)
+w = GraphWin('WINDOW',1400,700)
 
 #Making Sky
 w.setBackground('cyan')
