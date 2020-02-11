@@ -1,5 +1,6 @@
-#Lab 31
-file = open("Lab31List.txt",'r')
-print(file.readline(3))
+#Lab 32
+from graphics import *
+from random import *
+file = open("ColorList.txt",'r')
+print(file.readline(randint(0,9)))
 file.close()
-https://www.pythonforbeginners.com/files/reading-and-writing-files-in-python
