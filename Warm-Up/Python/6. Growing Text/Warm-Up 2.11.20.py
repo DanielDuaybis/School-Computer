@@ -17,28 +17,18 @@ while True:
         word.setSize(i)
         col = color_rgb(randint(0,255),randint(0,255),randint(0,255))
         word.setTextColor(col)
-        if(counter % 4 == 0):
-            word.setFace('helvetica')
-        if(counter % 4 == 1):
-            word.setFace('courier')
-        if(counter % 4 == 2):
-            word.setFace('arial')
-        if(counter % 4 == 3):
-            word.setFace('times roman')
         time.sleep(.01)
-        counter = counter + 1
-        
     for i in range(36,5,-1):
         word.setSize(i)
         col = color_rgb(randint(0,255),randint(0,255),randint(0,255))
         word.setTextColor(col)
-        if(counter % 4 == 0):
-            word.setFace('helvetica')
-        if(counter % 4 == 1):
-            word.setFace('courier')
-        if(counter % 4 == 2):
-            word.setFace('arial')
-        if(counter % 4 == 3):
-            word.setFace('times roman')
         time.sleep(.01)
-        counter = counter + 1
+    if(counter % 4 == 0):
+        word.setFace('helvetica')
+    if(counter % 4 == 1):
+        word.setFace('courier')
+    if(counter % 4 == 2):
+        word.setFace('arial')
+    if(counter % 4 == 3):
+        word.setFace('times roman')
+    counter = counter + 1
