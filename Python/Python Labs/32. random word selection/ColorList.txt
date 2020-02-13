@@ -1,9 +1,1 @@
-rred;
-orange;
-yellow;
-green;
-blue;
-purple;
-cyan;
-white;
-tan;
+red orange yellow green blue purple cyan white tan
