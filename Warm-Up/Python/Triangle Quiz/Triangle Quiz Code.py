@@ -8,12 +8,10 @@ w = GraphWin('THIS IS A GREAT QUIZ',600,600)
 w.setBackground('white')
 
 #Creating lists to erase
-erase = ['testvalue']
-erase.pop(0)
+erase = []
 shape = 0
 counter = 0
-erase2 = ['testvalue']
-erase2.pop(0)
+erase2 = []
 
 #Master while loop
 while True:
@@ -50,7 +48,7 @@ while True:
     #Check to see what shape to draw
     elif(shape % 2 == 1):
         
-        #Drawing Rectangles
+    #Drawing Rectangles
         for i in range(0,randint(25,50)):
             rectangle = Rectangle(Point(randint(0,600),randint(0,600)),Point(randint(0,600),randint(0,600)))
             color = color_rgb(randint(0,255),randint(0,255),randint(0,255))
