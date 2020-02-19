@@ -8,10 +8,13 @@ w = GraphWin('THIS IS A GREAT QUIZ',600,600)
 w.setBackground('white')
 
 #Creating lists to erase
-erase = ['testvalue']
-erase.pop(0)
+erase = []
 shape = 0
 counter = 0
+<<<<<<< HEAD
+=======
+erase2 = []
+>>>>>>> 964c4492da8de20b99df7ffe150abc1c08b27023
 
 #Master while loop
 while True:
