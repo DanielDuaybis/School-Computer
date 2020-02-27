@@ -15,6 +15,12 @@ ground.setFill('green')
 ground.setOutline('green')
 ground.draw(w)
 
+#Making Sun
+sun = Circle(Point(50,50),50)
+sun.setFill('yellow')
+sun.setOutline('yellow')
+sun.draw(w)
+
 #Making Waldo
 randx = randint(0,1400)
 randy = randint(0,500)
@@ -30,31 +36,19 @@ clicked.setSize(30)
 clicked.draw(w)
 
 #Finding Waldo
-close = Text(Point(500,200),' ')
-close.setSize(36)
-close.draw(w)
-for i in range(0,20):
-    clicked.setText(i)
+print("Waldo is at ",randx,",",randy)
+clicks = 0
+while True:
+    if(waldo.contains(w.getMouse())):
+        break;
+    clicks = clicks + 1
+    clicked.setText(clicks)
     
-    if(waldo.contains(Point(location))):
-        #Winning Sequence
-        win = Text(Point(700,250),'CONGRATS!')
-        win.setSize(36)
-        win.draw(w)
-        win2 = Text(Point(700,300),'YOU CAUGHT WALDO IN ' + str(clicked.getText()) + ' CLICKS')
-        win2.setSize(36)
-        win2.draw(w)
-        break
-    
-    elif():
-        
-    else:
-        
-    
-    location = w.getMouse()
-
-if(i == 20):
-    lose = Text(Point(700,250),'YOU LOSE')
+waldo.draw(w)
+win = Text(Point(700,350),'YOU FOUND WALDO IN ',clicks,' CLICKS')
+win.setSize(36)
+win.setFill('red')
+win.draw(w)
 
 w.getMouse()
 w.close()
