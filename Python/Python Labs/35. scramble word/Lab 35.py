@@ -10,9 +10,10 @@ color = colors[randint(0,8)]
 for i in color:
     letters.append(i)
 
+letters.pop(len(letters) - 1)
+
 for x in range(0,len(letters)):
-    length = len(letters)
-    number = randint(0,length)
-    print(letters[number],end='')
+    number = randint(0,len(letters))
+    letter = letters[number]
+    print(letter,end='')
     letters.pop(number)
-    length = length - 1
