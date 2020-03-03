@@ -21,22 +21,6 @@ while True:
         letter = letters[number]
         print(letter,end='')
         letters.pop(number)
-
-    print()
-    guess = input("Please enter your guess: ")
-
-    if(guess == color):
-        print()
-        print("You got it!")
-        time.sleep(.5)
-        print()
-        again = input("Would you like to play again? (yes or no) ")
-        if(again =="no"):
-            break;
     
-    else:
-        print()
-        guess = input("Please try again: ")
-
 print()
 print("Thanks for playing!")
