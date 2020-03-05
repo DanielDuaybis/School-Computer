@@ -1,4 +1,4 @@
-red
+pink
 orange
 yellow
 green
@@ -6,4 +6,4 @@ blue
 purple
 cyan
 white
-tan
+red
