@@ -24,7 +24,7 @@ main()
 		cout<"                                                                    ";
   		gotoxy(0,0);
   		Sleep(1000);
-  		cout<<"Try again...swine";
+  		cout<<"Try again";
   		gotoxy(0,0);
   		Sleep(1000);
   		cout<<"                                                            ";
@@ -119,7 +119,7 @@ main()
 		if(bet <= 0)
 		{
 			gotoxy(4,17);
-			cout<<"YOU LOSE, FAREWELL SWINE!";
+			cout<<"YOU LOSE, FAREWELL!";
 			gotoxy(0,23);
 			break;
 		}

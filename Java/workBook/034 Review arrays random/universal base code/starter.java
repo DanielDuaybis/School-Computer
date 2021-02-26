@@ -24,8 +24,5 @@ public class starter implements InputControl, InputKeyControl
 		{
 			// temp holds the enter character
 			
-			char done = (char)10;
-			String temp = Character.toString(done);
-			
 		}
 }
